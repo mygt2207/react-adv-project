@@ -1,12 +1,9 @@
-import { FC } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
-type MainPageProps = {};
+const MainPage = () => {
+  const { t } = useTranslation('main');
 
-const MainPage: FC<MainPageProps> = ({}) => {
-  const { t } = useTranslation("main");
-
-  return <div>{t("Main page")}</div>;
+  return <div>{t('Main page')}</div>;
 };
 
 export default MainPage;

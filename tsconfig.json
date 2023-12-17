@@ -14,7 +14,8 @@
     },
     // for import
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true
 
   },
   "ts-node": {
