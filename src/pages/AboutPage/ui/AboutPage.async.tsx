@@ -1,11 +1,10 @@
-import { lazy } from 'react'
+import { lazy } from 'react';
 
 export const AboutPageAsync = lazy(
-  async () =>
-    await new Promise((resolve) => {
-      setTimeout(() => {
-        // @ts-expect-error mock
-        resolve(import('./AboutPage'))
-      }, 1500)
-    })
-)
+  async () => new Promise((resolve) => {
+    setTimeout(() => {
+      // @ts-expect-error mock
+      resolve(import('./AboutPage'));
+    }, 1500);
+  }),
+);

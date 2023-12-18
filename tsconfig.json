@@ -22,5 +22,6 @@
     "compilerOptions": {
       "module": "CommonJS"
     }
-  }
+  },
+  "ignorePatterns": ["./.eslintrc.js"]
 }
