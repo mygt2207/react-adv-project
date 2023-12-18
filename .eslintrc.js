@@ -33,11 +33,12 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'no-underscore-dangle': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
-    // '@typescript-eslint/strict-boolean-expressions': 'warn',
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/naming-convention': 'warn',
     '@typescript-eslint/member-delimiter-style': 'off',
     'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'max-len': ['error', { ignoreComments: true, code: 120 }],
+    'comma-dangle': 'off',
   },
   globals: {
     __IS_DEV__: true,

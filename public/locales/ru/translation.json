@@ -2,5 +2,8 @@
   "test translate": "тест перевода",
   "Language": "Русский",
   "Main page": "Главная",
-  "About page": "О нас"
+  "About page": "О нас",
+  "Page not found": "Страница не найдена",
+  "Unexpected error": "Непредвиденная ошибка",
+  "Reload page": "Перезагрузить страницу"
 }
