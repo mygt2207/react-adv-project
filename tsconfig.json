@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "esnext",
+    "module": "ESNext",
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
@@ -23,5 +23,10 @@
       "module": "CommonJS"
     }
   },
+
+
+  "include": [
+    "./config/jest/setupTests.ts"
+  ],
   "ignorePatterns": ["./.eslintrc.js"]
 }
