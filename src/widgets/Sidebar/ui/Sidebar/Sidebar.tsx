@@ -10,7 +10,7 @@ interface SidebarProps {
   className?: string;
 }
 
-export const Sidebar: FC<SidebarProps> = ({ className = '' }) => {
+export const Sidebar: FC<SidebarProps> = ({ className = 's' }) => {
   const [collapsed, setCollapsed] = useState<boolean>(false);
   const { t } = useTranslation();
 
