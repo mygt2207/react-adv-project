@@ -5,7 +5,7 @@
 
 import path from 'path';
 
-module.exports = {
+export default {
   clearMocks: true,
   testEnvironment: 'jsdom',
   coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
