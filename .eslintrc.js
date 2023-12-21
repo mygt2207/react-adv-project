@@ -36,11 +36,19 @@ module.exports = {
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/naming-convention': 'warn',
     '@typescript-eslint/member-delimiter-style': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
     'max-len': ['error', { ignoreComments: true, code: 120 }],
     'comma-dangle': 'off',
   },
   globals: {
     __IS_DEV__: true,
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        'i18next/no-literal-string': 'off',
+      },
+    },
+  ],
 };
