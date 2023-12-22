@@ -1,11 +1,11 @@
 {
   "test translate": "тест перевода",
   "Language": "Русский",
+  "Lang": "Ru",
   "Main page": "Главная",
   "About page": "О нас",
   "Page not found": "Страница не найдена",
   "Unexpected error": "Непредвиденная ошибка",
   "Reload page": "Перезагрузить страницу",
   "toggle": "переключить"
-
 }
