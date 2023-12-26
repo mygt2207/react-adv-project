@@ -1,4 +1,6 @@
-import React, { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
+import React, {
+  ReactNode, useCallback, useEffect, useRef, useState
+} from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { Portal } from 'shared/ui/Portal/Portal';
@@ -14,7 +16,9 @@ interface ModalProps {
 const ANIMATION_DELAY = 300;
 
 export const Modal = (props: ModalProps) => {
-  const { className = '', children, isOpen, onClose } = props;
+  const {
+    className = '', children, isOpen, onClose
+  } = props;
 
   const [isClosing, setIsClosing] = useState(false);
   const timerRef: { current: NodeJS.Timeout | null } = useRef(null);
