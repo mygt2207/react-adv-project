@@ -1,10 +1,13 @@
 {
   "About page": "About page",
   "Language": "Language",
+  "Login": "Login",
   "Main page": "Main page",
   "Page not found": "Страница не найдена",
   "Reload page": "Reload page",
   "Test page": "Test page",
   "Unexpected error": "Unexpected error",
+  "decrement": "decrement",
+  "increment": "increment",
   "Войти": "Войти"
 }

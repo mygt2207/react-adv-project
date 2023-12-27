@@ -20,7 +20,7 @@ export const Navbar: FC<NavbarProps> = ({ className = '' }) => {
   return (
     <div className={classNames(cls.Navbar, {}, [className])}>
       <Button theme={ButtonTheme.CLEAR_INVERTED} className={cls.links} onClick={onToggleModal}>
-        {t('Войти')}
+        {t('Login')}
       </Button>
       {/* eslint-disable-next-line i18next/no-literal-string */}
       <Modal isOpen={isAuthModal} onClose={() => setIsAuthModal(false)}>
