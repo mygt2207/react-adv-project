@@ -10,5 +10,7 @@
   "toggle": "переключить",
   "Login": "Войти",
   "increment": "увеличить",
-  "decrement": "уменьшить"
+  "decrement": "уменьшить",
+  "Enter password": "Введите пароль",
+  "Enter username": "Введите логин"
 }
