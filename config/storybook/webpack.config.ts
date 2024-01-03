@@ -1,4 +1,4 @@
-import webpack, { RuleSetRule } from 'webpack';
+import webpack, { RuleSetRule, DefinePlugin } from 'webpack';
 import path from 'path';
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
 import { BuildPaths } from '../build/types/config';
@@ -32,6 +32,13 @@ export default ({ config }: { config: webpack.Configuration }) => {
   });
   // @ts-ignore
   config.module.rules.push(buildCssLoader(true));
+
+  // @ts-ignore
+  config.plugins.push(
+    new DefinePlugin({
+      __IS_DEV__: true,
+    })
+  );
 
   return config;
 };
