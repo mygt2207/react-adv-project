@@ -15,11 +15,6 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
   rules: {
-    'react/jsx-indent': [2, 2],
-    'react/jsx-indent-props': [2, 2],
-    indent: [2, 2],
-    '@typescript-eslint/indent': ['error', 2],
-
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
@@ -36,7 +31,7 @@ module.exports = {
     '@typescript-eslint/semi': 'off',
     '@typescript-eslint/naming-convention': 'warn',
     '@typescript-eslint/member-delimiter-style': 'off',
-    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] }],
+    'i18next/no-literal-string': ['error', { markupOnly: true, ignoreAttribute: ['data-testid', 'to', 'name'] }],
     'max-len': ['error', { ignoreComments: true, code: 120 }],
     'comma-dangle': 'off',
     'jsx-a11y/click-events-have-key-events': 'off',
