@@ -1,60 +1,57 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import 'app/styles/index.scss';
+import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Text, TextTheme } from './Text';
 
 export default {
-  title: 'shared/Text',
-  component: Text,
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
+    title: 'shared/Text',
+    component: Text,
+    argTypes: {
+        backgroundColor: { control: 'color' },
+    },
 } as ComponentMeta<typeof Text>;
 
 const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
-export const TitleAndText = Template.bind({});
-TitleAndText.args = {
-  title: 'Title One',
-  text: 'Text One',
+export const Primary = Template.bind({});
+Primary.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
 };
 
 export const Error = Template.bind({});
 Error.args = {
-  title: 'Title One',
-  text: 'Text One',
-  theme: TextTheme.ERROR,
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
+    theme: TextTheme.ERROR,
 };
 
-export const OnlyTitle = Template.bind({});
-OnlyTitle.args = {
-  title: 'Title One',
-};
-export const OnlyText = Template.bind({});
-OnlyText.args = {
-  text: 'Text One',
+export const onlyTitle = Template.bind({});
+onlyTitle.args = {
+    title: 'Title lorem ipsun',
 };
 
-export const TitleAndTextDark = Template.bind({});
-TitleAndTextDark.args = {
-  title: 'Title One',
-  text: 'Text One',
+export const onlyText = Template.bind({});
+onlyText.args = {
+    text: 'Description Description Description Description',
 };
 
-TitleAndTextDark.decorators = [ThemeDecorator(Theme.DARK)];
-
-export const OnlyTitleDark = Template.bind({});
-OnlyTitleDark.args = {
-  title: 'Title One',
+export const PrimaryDark = Template.bind({});
+PrimaryDark.args = {
+    title: 'Title lorem ipsun',
+    text: 'Description Description Description Description',
 };
+PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-OnlyTitleDark.decorators = [ThemeDecorator(Theme.DARK)];
-
-export const OnlyTextDark = Template.bind({});
-OnlyTextDark.args = {
-  text: 'Text One',
+export const onlyTitleDark = Template.bind({});
+onlyTitleDark.args = {
+    title: 'Title lorem ipsun',
 };
+onlyTitleDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-OnlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];
+export const onlyTextDark = Template.bind({});
+onlyTextDark.args = {
+    text: 'Description Description Description Description',
+};
+onlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];

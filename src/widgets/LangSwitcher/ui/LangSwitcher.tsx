@@ -9,14 +9,14 @@ interface LangSwitcherProps {
 }
 
 export const LangSwitcher: FC<LangSwitcherProps> = ({ className = '', short }) => {
-  const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
-  const toggle = () => {
-    i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
-  };
-  return (
-    <Button className={classNames('', {}, [className])} theme={ButtonTheme.CLEAR} onClick={toggle}>
-      {t(short ? 'Lang' : 'Language')}
-    </Button>
-  );
+    const toggle = () => {
+        i18n.changeLanguage(i18n.language === 'en' ? 'ru' : 'en');
+    };
+    return (
+        <Button className={classNames('', {}, [className])} theme={ButtonTheme.CLEAR} onClick={toggle}>
+            {t(short ? 'Lang' : 'Language')}
+        </Button>
+    );
 };
