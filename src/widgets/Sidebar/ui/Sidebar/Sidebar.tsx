@@ -17,11 +17,12 @@ export const Sidebar = memo(({ className }: SidebarProps) => {
 
   const onToggle = () => {
     setCollapsed((prev) => !prev);
+    console.log('toggled');
   };
 
   const itemsList = useMemo(
     () => SidebarItemsList.map((item) => <SidebarItem key={item.path} item={item} collapsed={collapsed} />),
-    [collapsed]
+    [collapsed],
   );
 
   return (

@@ -1,12 +1,16 @@
 {
+  "Edit": "Edit",
   "Lorem ipsum dolor sit amet, consectetur adipisicing elit": {
     " Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam": {
       "": ""
     }
   },
+  "Profile": "Profile",
   "Profile page": "Profile page",
   "Reload page": "",
   "Unexpected error": "",
+  "Your firstname": "Your firstname",
+  "Your lastname": "Your lastname",
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
